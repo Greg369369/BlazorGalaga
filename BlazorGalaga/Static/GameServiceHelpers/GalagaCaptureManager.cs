@@ -38,7 +38,7 @@ namespace BlazorGalaga.Static.GameServiceHelpers
                 bug.Paths.Clear();
                 bug.IsMoving = false;
                 bug.RotateWhileStill = true;
-                bug.ManualRotationRate = 15;
+                bug.ManualRotationRate = 10;
                 bug.Sprite.SpriteType = Sprite.SpriteTypes.Ship;
                 bug.Sprite.IsInitialized = false;
                 bug.HomePoint = new Point(0, 0);
