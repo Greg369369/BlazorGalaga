@@ -15,10 +15,10 @@ namespace BlazorGalaga.Static.Levels
         public static void InitIntro(AnimationService animationService, int introspeedincrease)
         {
 
-            //two groups of four from top
-            for (int i = 0; i < 4; i++)
+            //two groups of three from top
+            for (int i = 0; i < 3; i++)
                 animationService.Animatables.Add(BugFactory.CreateAnimatable_BugIntro(i, i * Constants.BugIntroSpacing, new Intro1(), Sprite.SpriteTypes.BlueBug, 1, introspeedincrease,false));
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 3; i++)
                 animationService.Animatables.Add(BugFactory.CreateAnimatable_BugIntro(i + 4, i * Constants.BugIntroSpacing, new Intro2(), Sprite.SpriteTypes.RedBug, 1, introspeedincrease, false));
 
             //two groups of eight from bottom
